@@ -1,2 +1,3 @@
 *.iml
+.idea/
 /layui-manager-web/target/

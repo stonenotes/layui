@@ -2,7 +2,7 @@
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-    <display-name>layui-manager</display-name>
+    <display-name>manager</display-name>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
@@ -38,7 +38,7 @@
     </filter-mapping>
     <!-- springmvc的前端控制器 -->
     <servlet>
-        <servlet-name>layui-manager</servlet-name>
+        <servlet-name>manager</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <!-- contextConfigLocation不是必须的， 如果不配置contextConfigLocation， springmvc的配置文件默认在：WEB-INF/servlet的name+"-servlet.xml" -->
         <init-param>
@@ -48,7 +48,7 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>layui-manager</servlet-name>
+        <servlet-name>manager</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
