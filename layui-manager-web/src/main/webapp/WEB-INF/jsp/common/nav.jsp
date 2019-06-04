@@ -55,7 +55,7 @@
                     let iframe = $(".myiframe");
                     let content = $(this).attr('target');
                     iframe.attr("src", content);
-                    iframe.location.reload();
+                    // iframe.location.reload();
                 });
             });
         }
