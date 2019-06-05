@@ -13,7 +13,7 @@
     <div class="layui-body">
         <!-- 内容主体区域 -->
         <div style="padding: 15px;height:100%">
-            <iframe id="option" class="myiframe" name="option" src="form.do" style="overflow: visible;" scrolling="yes"
+            <iframe id="option" class="myiframe" name="option" src="http://www.baidu.com" style="overflow: visible;" scrolling="yes"
                     frameborder="no" width="100%" height="100%"></iframe>
         </div>
     </div>

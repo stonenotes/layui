@@ -73,9 +73,9 @@
 <span>按钮图文：</span>
 
 <button class="layui-btn layui-btn-big layui-btn-primary layui-btn-radius">大型加圆角</button>
-<button class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon">&#xe640;</i> 删除</button>
+<button id="btn_click" class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon">&#xe640;</i> 删除</button>
 <button class="layui-btn layui-btn-mini layui-btn-disabled"><i class="layui-icon">&#xe641;</i> 禁分享</button>
-
+<button id="btn_switch_status" class="layui-btn layui-btn-mini layui-btn-disabled"><i class="layui-icon"><img width="20px" height="20px" src="http://pic3.16pic.com/00/19/73/16pic_1973735_b.jpg"></i> 禁分享</button>
 <br><br>
 
 <span>按钮组：</span>
@@ -104,7 +104,23 @@
 
 
 <script>
+    layui.use(['element', 'layer', 'jquery'], function () {
+        var element = layui.element;
+        var layer = layui.layer;
+        var $ = layui.$;
+        $('#btn_click').on('click', function () {
+            var classContent = $('#btn_switch_status').attr('class');
+            let a = "layui-btn layui-btn-mini layui-btn-disabled";
+            let b = "layui-btn layui-btn-mini";
+            if (classContent == a) {
+                $('#btn_switch_status').removeClass(a).addClass(b);
+            }  else {
+                $('#btn_switch_status').removeClass(b).addClass(a);
+            }
 
+            layer.msg(classContent);
+        });
+    });
 </script>
 </body>
 </html>
