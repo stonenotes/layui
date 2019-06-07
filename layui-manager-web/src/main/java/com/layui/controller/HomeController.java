@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 public class HomeController {
 
@@ -24,8 +26,6 @@ public class HomeController {
         modelAndView.addObject("headerBean", headerBean);
         return modelAndView;
     }
-
-
 
     @RequestMapping(value = "nav_left", produces = "application/json; charset=utf-8")
     @ResponseBody
