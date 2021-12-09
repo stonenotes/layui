@@ -36,7 +36,7 @@
         <jedis.version>2.7.2</jedis.version>
         <solrj.version>4.10.3</solrj.version>
         <lombok.version>1.18.0</lombok.version>
-        <jackson.version>2.4.5</jackson.version>
+        <jackson.version>2.9.10.8</jackson.version>
     </properties>
     <dependencyManagement>
         <dependencies>
